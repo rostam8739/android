@@ -9,7 +9,9 @@ val Aqua = Color(0xFF76BEBD)
 val Plantation = Color(0xFF2E3538)
 val Shark = Color(0xFF21272A)
 val BalticSea = Color(0xFF1C1B1F)
-
+val RoyalBlue = Color(0xFF1976D2)
+val SkyBlue = Color(0xFF42A5F5)
+val DarkBg = Color(0xFF121212)
 // amoled
 val ElectricTeal = Color(0xFF4DD0E1)
 
@@ -37,10 +39,10 @@ sealed class ThemeColors(
 
     data object Light :
         ThemeColors(
-            background = LightGrey.copy(alpha = 0.95f),
+            background = OffWhite,
             surface = OffWhite,
-            primary = Aqua,
-            secondary = LightGrey,
+            primary = RoyalBlue,
+            secondary = SkyBlue,
             onSurface = BalticSea,
             outline = Plantation.copy(alpha = .75f),
             onBackground = BalticSea,
@@ -48,10 +50,10 @@ sealed class ThemeColors(
 
     data object Dark :
         ThemeColors(
-            background = BalticSea,
-            surface = Shark,
-            primary = Aqua,
-            secondary = Plantation,
+            background = DarkBg,
+            surface = DarkBg,
+            primary = RoyalBlue,
+            secondary = SkyBlue,
             onSurface = OffWhite,
             outline = CoolGray,
             onBackground = OffWhite,
